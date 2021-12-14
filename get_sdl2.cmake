@@ -76,7 +76,7 @@ if(NOT TARGET SDL2::mixer)
 
     FetchContent_Populate(SDL2_mixer
         GIT_REPOSITORY https://github.com/Daft-Freak/SDL_mixer
-        GIT_TAG        cmake-tweaks
+        GIT_TAG        cmake-tweaks 
     )
     #add_definitions(-DMUSIC_MP3 -DMUSIC_OGG) # VS compile errors if no music formats?? //-DMUSIC_WAV
     add_subdirectory(${sdl2_mixer_SOURCE_DIR} SDL2_mixer EXCLUDE_FROM_ALL)
